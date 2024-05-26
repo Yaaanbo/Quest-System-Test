@@ -528,7 +528,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: dcde31d278256594fa6cea9b540ab44c, type: 2}
   - {fileID: 11400000, guid: 58c635691e290914a8cdc92f97ef4f35, type: 2}
   - {fileID: 11400000, guid: c022570e2ad79e049be62fbae2d79975, type: 2}
-  - {fileID: 11400000, guid: 0fd17dd16fde63d4694c83104cc2759d, type: 2}
   questTitleTxt: {fileID: 1295457078}
   questDescriptionTxt: {fileID: 724895352}
 --- !u!4 &640112012
