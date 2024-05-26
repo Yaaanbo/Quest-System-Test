@@ -525,18 +525,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest:
-  - questType: 0
-    questTitle: On the Hunt
-    questDesc: Venture to the nature and kill 3 slimes!
-    requiredAmount: 3
-    currentAmount: 0
-    isQuestActive: 0
-  - questType: 1
-    questTitle: Help the others
-    questDesc: Gather 5 herb in the wild!
-    requiredAmount: 5
-    currentAmount: 0
-    isQuestActive: 0
+  - {fileID: 11400000, guid: dcde31d278256594fa6cea9b540ab44c, type: 2}
+  - {fileID: 11400000, guid: 58c635691e290914a8cdc92f97ef4f35, type: 2}
+  - {fileID: 11400000, guid: c022570e2ad79e049be62fbae2d79975, type: 2}
+  - {fileID: 11400000, guid: 0fd17dd16fde63d4694c83104cc2759d, type: 2}
   questTitleTxt: {fileID: 1295457078}
   questDescriptionTxt: {fileID: 724895352}
 --- !u!4 &640112012
@@ -727,7 +719,7 @@ Transform:
   m_GameObject: {fileID: 806064033}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -797,7 +789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &891486208
 RectTransform:
   m_ObjectHideFlags: 0
@@ -877,7 +869,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bob
+  m_text: Npc Name Here
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1194,7 +1186,7 @@ Transform:
   m_GameObject: {fileID: 1694655450}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 960, y: 540, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1334,6 +1326,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1774834585}
   m_CullTransparentMesh: 1
+--- !u!1 &1789442335
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1789442337}
+  - component: {fileID: 1789442336}
+  m_Layer: 0
+  m_Name: Bob (NPC)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1789442336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789442335}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa268e5f9e5c1f2469f9f13aefa8176a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcName: Bob
+  npcNormalConv: Hello There!
+  npcQuestConv: Let the wind guide your way, and my arrow..
+  npcConvUI: {fileID: 891486207}
+  npcConvTxt: {fileID: 1774834587}
+  npcNameTxt: {fileID: 1061949627}
+--- !u!4 &1789442337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1789442335}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2138980342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,3 +1463,4 @@ SceneRoots:
   - {fileID: 1226849821}
   - {fileID: 806064035}
   - {fileID: 1694655452}
+  - {fileID: 1789442337}

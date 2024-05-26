@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ae50a6c767fd864abd1f4247086da52, type: 3}
+  m_Name: 1. Help The Others
+  m_EditorClassIdentifier: 
+  questType: 1
+  questTitle: Help The Others
+  questDesc: Gather 3 herbs in the wild!
+  requiredAmount: 3
+  currentAmount: 0
+  isQuestActive: 1

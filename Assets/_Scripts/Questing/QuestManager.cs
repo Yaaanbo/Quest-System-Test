@@ -45,6 +45,7 @@ public class QuestManager : MonoBehaviour
         {
             Debug.Log("Quest Complete");
             currentQuest.isQuestActive = false;
+            currentQuest.currentAmount = 0;
 
             NextQuest();
         }
